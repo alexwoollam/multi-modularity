@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace My\Plugin;
 
-
 use Inpsyde\Modularity\Module\ExecutableModule;
 use Psr\Container\ContainerInterface;
 
