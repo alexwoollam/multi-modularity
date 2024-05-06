@@ -11,9 +11,18 @@ use Psr\Container\ContainerInterface;
 class AlsoThing implements ExecutableModule
 {
 
+    public bool $thing;
+
+    public function __construct(){
+        $this->thing = true;
+    }
+
     public function run(ContainerInterface $container): bool
     {
-        // This is now also loaded.
+        if($container->has('Some.thing')) {
+            $this->thing = $container->get('Some.thing');
+            // $this->thing is now controlled by My\Plugin\AnotherService->'Some.thing';
+        }
 
         return true;
     }
