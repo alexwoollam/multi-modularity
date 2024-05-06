@@ -1,0 +1,11 @@
+{
+    "name": "alex/my-plugin",
+    "autoload": {
+        "psr-4": {
+            "My\\Plugin\\": "src/"
+        }
+    },
+    "require": {
+        "inpsyde/modularity": "^1.7"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "alex/my-app",
+    "authors": [
+        {
+            "name": "Alex Woollam",
+            "email": "alexjhwoollam@gmail.com"
+        }
+    ],
+    "require": {
+        "inpsyde/modularity": "^1.7"
+    }
+}
